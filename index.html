@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <main>
+    <div id="contain">
+      <!-- Rating state start -->
+      <div class="card rating-card hide">
+        <div class="rating-card__icon-wrapper">
+          <div class="rating-card__icon"></div>
+        </div>
+        <h2 class="card__header">How did we do?</h2>
+        <p class="card__paragraph">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <form class="rating-card__form">   
+          <input type="button" value="1" class="rating-card__form-value"/>
+          <input type="button" value="2" class="rating-card__form-value"/>
+          <input type="button" value="3" class="rating-card__form-value">
+          <input type="button" value="4" class="rating-card__form-value">
+          <input type="button" value="5" class="rating-card__form-value">
+          <input type="button" value="Submit" class="rating-card__form-submit">
+        </form>
+      </div>
+      <!-- Rating state end -->
+      
+      <!-- Thank you state start -->
+      <div class="card thank-card hide">
+        <div class="thank-card__wrapper1">
+          <div class="thank-card__pic"></div>
+          <div class="thank-card__choice-wrapper">
+            <p class="thank-card__choice">You selected -1 out of 5</p>
+          </div>
+        </div>
+        <div class="thank-card__wrapper2">
+          <h2 class="card__header">Thank you!</h2>
+          <p class="card__paragraph thank-card__paragraph">  We appreciate you taking the time to give a rating.<br>If you ever need more support, 
+            don't hesitate to get in touch!</p>
+          </div>
+        </div>
+        <!-- Thank you state end -->
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+  <script src="./css/script.js"></script>
+</html>

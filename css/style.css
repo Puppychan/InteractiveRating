@@ -1,0 +1,209 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --light-grey: hsl(217, 12%, 63%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --orange: hsl(25, 97%, 53%);
+    --middle-blue: hsl(213, 19%, 25%);
+}
+*,  *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Overpass", sans-serif;
+}
+input, select, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* start general */
+.click-change2 {
+    background-color: var(--orange) !important;
+    color: var(--white) !important;
+}
+.click-change1 {
+    background-color: var(--medium-grey) !important;
+    color: var(--white) !important;
+}
+.card {
+    width: 40%;
+    max-width: 45rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2em;
+
+    padding: 4em;
+    background-color: var(--dark-blue);
+    border-radius: 4rem;
+}
+.card__header {
+    color: var(--white);
+    font-size: clamp(2.5rem, 1.5vw, 2.9rem);
+    word-spacing: 1px;
+}
+.card__paragraph {
+    color: var(--light-grey);
+    font-size: clamp(1.7rem, 1.5vw, 2rem);
+    line-height: 1.7em;
+}
+/* end general */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+#contain {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--very-dark-blue);
+}
+
+
+/* Start of Rating state */
+/* start of card */
+.rating-card__icon-wrapper {
+    --circle-size: 5em;
+    display: inline-block;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+
+    background-color: var(--middle-blue);
+}
+.rating-card__icon {
+    content: " ";
+    height: 100%;
+    width: 100%;
+
+    background-image: url(../images/icon-star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+/* start of form */
+.rating-card__form {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2em;
+
+}
+.rating-card__form-value {
+    --circle-size: 2.5em;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    
+    border-radius: 50%;
+    border: none;
+    background-color: var(--middle-blue);
+    color: var(--white);
+
+    font-size: clamp(1.6rem, 1.8vw, 1.9rem);
+    
+}
+.rating-card__form-submit {
+    /* height: 3.4em; */
+    padding: 0.5em 0;
+    width: 100%;
+
+    border-radius: 2rem;
+
+    font-size: clamp(1.7rem, 1.3vw, 2.2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.rating-card__form-value:hover {
+    cursor: pointer;
+}
+/* end of form */
+/* end of card */
+/* End of Rating state */
+
+
+/* Start of Thank you state */
+
+.thank-card {
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.thank-card__wrapper1, 
+.thank-card__wrapper2 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* start of wrapper 1 */
+.thank-card__pic {
+    width: 100%;
+    height: 15em;
+    content: " ";
+    background: url("../images/illustration-thank-you.svg") center / 60% 100% no-repeat;
+}
+.thank-card__choice-wrapper {
+    /* display: inline-block; */
+    width: 63%;
+    height: 4em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 2.5rem;
+    background-color: var(--middle-blue);
+
+}
+.thank-card__choice {
+    color: var(--orange);
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+    vertical-align: middle;
+}
+/* End of wrapper 1 */
+
+/* Start of wrapper 2 */
+.thank-card__wrapper2 {
+    gap: 1em;
+}
+.thank-card__paragraph {
+    text-align: center;
+    font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+    
+}
+/* End of wrapper 2 */
+/* End of Thank you state */
+
+/* Script */
+.rating-card.hide {
+    display: none;
+}
+.thank-card.hide {
+    display: none;
+}

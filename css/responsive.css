@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+    }
+    .thank-card__choice {
+        font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+    }
+}
