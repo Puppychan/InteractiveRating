@@ -38,7 +38,7 @@ Mobile window size at the top of the page:
 
 ### Links
 
-- Solution URL: [My solution URL](https://www.frontendmentor.io/solutions/3column-card-component-JyBa_F7Rr)
+- Solution URL: [My solution URL](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-rating-component-pindB_kto)
 - Live Site URL: [My product URL](https://puppychan.github.io/InteractiveRating/)
 
 ## My process
